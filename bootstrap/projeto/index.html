@@ -11,20 +11,13 @@
 <body>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+        <div class="navbar navbar-dark bg-light text-dark">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
                     </ul>
-                </div>
-            </div>
         </div>
     </header>
     
@@ -32,13 +25,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <h2>Sobre nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+                    <h2>Bootstrap</h2>
+                    <p>O bootstrap é uma biblioteca de estilização utilizada por milhares de desenvolvedores no mundo inteiro.Ela conta com diversas funcionalidades e pode ser utilizado para projetos em que o design não é o foco.</p>
+                    <a class="btn btn-lg btn-dark" href="https://getbootstrap.com/" target="_blank">Obter Agora</a>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                    <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="Imagem Exemplo" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -48,34 +40,34 @@
 
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col row">
 
-                    <h2>Produtos</h2>
+                    <h2>Modais</h2>
 
-                    <div class="card">
+                    <div class="card col-md-3 col-sm-12">
                         <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
+                            <h5 class="card-title">Modal Grande</h5>
+                            <p class="card-text">Este modal será aberto com tamanho maior</p>
+                            <a class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card col-md-3 col-sm-12">
                         <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
+                            <h5 class="card-title">Modal Médio</h5>
+                            <p class="card-text">Este modal será aberto com tamanho médio</p>
+                            <a class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#modal-2" >ver produto</a>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card col-md-3 col-sm-12">
                         <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                            <h5 class="card-title">Modal Pequeno</h5>
+                            <p class="card-text">Este modal será aberto com o menor tamanho possível</p>
+                            <a class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#modal-3" >ver produto</a>
                         </div>
                     </div>
                     
@@ -91,24 +83,24 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                    <p>Ficou interessado? Suba até o topo da página e clique em 'Obter Agora' para utilizar o Bootstrap no seu próximo projeto! O formulário ao lado (ou abaixo no caso de dispositivos móveis) não funciona!</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <form class="form">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome">
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control" type="email" name="email" placeholder="Digite seu E-mail">
                         </div>
 
                         <div class="input-group">
-                            <textarea  class="form-control" name="" rows="5"></textarea>
+                            <textarea  class="form-control" name="" rows="5" placeholder="Digite sua mensagem"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-dark">Enviar</button>
 
                     </form>
 
@@ -120,7 +112,7 @@
 
 
     <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Produto 1</h5>
@@ -153,7 +145,89 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 2</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 200</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 3</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 200</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

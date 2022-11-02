@@ -10,7 +10,15 @@ textarea {
 }
 
 .card {
-    width: 32%;
-    float: left;
-    margin: 5px;
+    margin: auto;
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
